@@ -6,11 +6,11 @@ void main() {
   */
 
   //variaveis non-nullable
-  String nomeCompletoSemAtribuicao;
-  nomeCompletoComAtribuicao = null;
+  // String nomeCompletoSemAtribuicao;
+  // nomeCompletoComAtribuicao = null;
 
-   String nomeCompletoSemAtribuicao = null;
-  nomeCompletoComAtribuicao = "Fundamentos do Dart";
+  //  String nomeCompletoSemAtribuicao = null;
+  // nomeCompletoComAtribuicao = "Fundamentos do Dart";
 
   //variavel nullable
   String? nomeCompletoComAtribuicao = null;

@@ -19,11 +19,11 @@ print(nomeCursoFinal);
  const nomeCursoConstante = "fundamentos em Dart";
 print(nomeCursoConstante);
 
-nomeCursoConstante = "fundamentos em dart versão final";
+// nomeCursoConstante = "fundamentos em dart versão final";
 
-//Const
-const nomeCursoConstante = "Fundamento em Dart";
-print(nomeCursoConstante);
+// //Const
+// const nomeCursoConstante = "Fundamento em Dart";
+// print(nomeCursoConstante);
 
 
 

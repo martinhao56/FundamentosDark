@@ -13,7 +13,7 @@ void main(List<String> args){
 
  var listaSemDadosInferencia = [];
 
- varlistaSemDadosInferenciaGenerio = <int>[];
+ var varlistaSemDadosInferenciaGenerio = [];
 
- var listaSemDadosInferenciaGenericosString = <string>[];
+ var listaSemDadosInferenciaGenericosString = <String>[];
 }
