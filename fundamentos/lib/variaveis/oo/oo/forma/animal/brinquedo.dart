@@ -1,4 +1,4 @@
 class Brinquedo {
-  String noeme;
-  Brinquedo(this.noeme);
+  String nome;
+  Brinquedo(this.nome);
 }

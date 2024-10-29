@@ -1,30 +1,36 @@
 import 'animal.dart';
 import 'alimento.dart';
 import 'brinquedo.dart';
+import 'especie.dart';
 
 class Cachorro extends Animal {
   int fofura;
   List<Brinquedo> brinquedos;
   Cachorro(String nome, double peso, this.fofura, Alimento alimento)
       : brinquedos = [],
-        super(nome, peso, alimento);
+        super(nome, peso, alimento, Especie.MAMIFERO);
+
+  void incluirBrinquedo(Brinquedo brinquedo) {
+    brinquedos.add(brinquedo);
+  }
 
   void brincar(Brinquedo brinquedo) {
-    void incluiBrinquedo(Brinquedo brinquedo) {
-      brinquedo.add(brinquedo);
+    if (brinquedos.contains(brinquedo)) {
+      fofura += 10;
+      print('A fofura de $nome aumentou para $fofura');
+      print('$nome está brincando com o brinquedo: ${brinquedo.nome}');
+    }else{
+      print('O brinquedo ${brinquedo.nome} não pertence ao $nome');
     }
+  }
 
-    fofura += 10;
-    print('A fofura de $nome aumenta para $fofura');
-    print('$nome está brincando com o brinquedo: $brinquedo.nome');
+  @override //obrigatório
+  void fazerSom() {
+    print('$nome fez auau');
   }
 
   @override
-  void fazerSom() {
-    print('$nome faz auau');
-  }
-
   String toString() {
-    return 'Cachorro | nome $nome; Peso: $peso: Fofura: $fofura';
+    return 'Cachorro | Nome: $nome; Peso: $peso; Fofura: $fofura; Espécie: ${especie.name}';
   }
 }
